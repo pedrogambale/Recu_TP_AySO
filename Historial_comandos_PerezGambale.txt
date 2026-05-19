@@ -1,0 +1,107 @@
+ssh-keygen
+cat $HOME/.ssh/*.pub
+git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes
+./UTN-FRA_SO_Examenes/script_Precondicion.sh
+chmod +x ./UTN-FRA_SO_Examenes/script_Precondicion.sh
+./UTN-FRA_SO_Examenes/script_Precondicion.sh
+source ~/.bashrc && history -a
+git clone git@github.com:pedrogambale/Recu_TP_AySO.git
+sudo mkdir -p /TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}
+cd Recu_TP_AySO/
+sudo mkdir -p /TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}
+echo "sudo mkdir -p /TP1/{arquitectura/Clase{1..5},so/Clase{1..6}}" > Punto_A.sh
+sudo groupadd p1c1_2026_u1
+sudo useradd -m -s /bin/bash -g p1c1_2026_u1 p1c1_2026_u1
+echo "p1c1_2026_u1:clave123" | sudo chpasswd
+sudo mkdir -p /datos
+sudo chown p1c1_2026_u1:p1c1_2026_u1 /datos
+sudo -u p1c1_2026_u1 bash -c "whoami > /datos/validar1.txt"
+cat << FIN > Punto_B.sh
+sudo groupadd p1c1_2026_u1
+sudo useradd -m -s /bin/bash -g p1c1_2026_u1 p1c1_2026_u1
+echo "p1c1_2026_u1:clave123" | sudo chpasswd
+sudo mkdir -p /datos
+sudo chown p1c1_2026_u1:p1c1_2026_u1 /datos
+sudo -u p1c1_2026_u1 bash -c "whoami > /datos/validar1.txt
+FIN
+
+sudo groupadd p1c1_2026_Todos
+sudo usermod -aG p1c1_2026_Todos p1c1_2026_u1
+sudo chown -R :p1c1_2026_Todos /datos
+sudo chmod -R g+w /datos
+sudo chmod o+r,o-x /datos
+sudo useradd -m -s /bin/bash p1c1_2026_u2
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt
+FIN
+sudo chmod 777 /datos/validar1.txt
+sudo chmod 777 /datos
+vagrant@VMPruebas:~/Recu_TP_AySO$ sudo bash
+sudo bash -c "sudo -u p1c1_2026_u2 id >> /datos/validar1.txt"
+aaaaaaaadasdwsudo chmod 777 /datossudo bash -c "sudo -u p1c1_2026_u2 id >> /datos/validar1.txt"sudo bash -c "sudo -u p1c1_2026_u2 id >> /datos/validar1.txt"sudo bash -c "sudo -u p1c1_2026_u2 id >> /datos/validar1.txt"sistohishistoryhuhhhhistohhhistory
+history
+sudo bash -c "sudo -u p1c1_2026_u2 id >> /datos/validar1.txt"
+cat << FIN > Punto_C.sh
+sudo groupadd p1c1_2026_Todos
+sudo usermod -aG p1c1_2026_Todos p1c1_2026_u1
+sudo chown -R :p1c1_2026_Todos /datos
+sudo chmod -R g+w /datos
+sudo chmod o+r,o-x /datos
+sudo useradd -m -s /bin/bash p1c1_2026_u2
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+FIN
+
+nt
+FIN
+history
+sudo bash -c "sudo -u p1c1_2026_u2 id >> /datos/validar1.txt"sudo bash -c "sudo -u p1c1_2026_u2 id >> /datoscat << 'EOF' > Punto_C.shcat << 'EOF' > Punto_C.shcat << 'EOF' > Punto__shsshshssudo groupadd p1c1_2026_Todosssuuuds
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+
+
+
+
+mkdir -p /tmp/head-check/{Error/{cliente,servidor},ok}mkdir -p /tmp/head-check/{Error/{cliente,servidor},ok}
+
+
+
+
+i /h[[aaEEEeE/oro,
+
+mkdir -p /tmp/head-check/{Error/{cliente,servidor},ok}mkdir -p /tmp/head-check/{Error/{cliente,servidor
+
+
+
+
+
+
+
+history
+mkdir -p /tmp/head-check/{Error/{cliente,servidor},ok}
+echo 'mkdir -p /tmp/head-check/{Error/{cliente,servidor},ok}' > Punto_D.sh
+chmod +x Punto_D.sh
+mkdir -p ~/Punto_E
+grep MemTotal /proc/meminfo > ~/Punto_E/Filtro_basico.txt
+grep "model name" /proc/cpuinfo | head -n1 >> ~/Punto_E/Filtro_basico.txt
+cat << FIN > Punto_E.sh
+mkdir -p ~/Punto_E
+grep MemTotal /proc/meminfo > ~/Punto_E/Filtro_basico.txt
+grep "model name" /proc/cpuinfo | head -n1 >> ~/Punto_E/Filtro_basico.txt
+FIN
+
+mkdir -p ~/Punto_F
+echo "Mi ip publica es: $(curl -s ifconfig.me)" > ~/Punto_F/Filtro_Avanzado.txt
+echo "CPU Modelo: $(grep 'model name' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}' | awk '{print $4}') Frecuencia: $(grep 'model name' /proc/cpuinfo | head -n1 | awk -F '@' '{print $2}' | xargs)" >> ~/Punto_F/Filtro_Avanzado.txt
+cat << FIN > Punto_F.sh
+mkdir -p ~/Punto_F
+IP_PUB=$(curl -s ifconfig.me)
+echo "Mi ip publica es: $IP_PUB" > ~/Punto_F/Filtro_Avanzado.txt
+MODELO=$(grep 'model name' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}' | awk '{print $4}')
+FRECUENCIA=$(grep 'model name' /proc/cpuinfo | head -n1 | awk -F '@' '{print $2}' | xargs)
+FIN
+
+history -a
+cp ~/.ssh/../.bash_history ./Historial_comandos_PerezGambale.txt
+git add .
+pwd
+cd Recu_TP_AySO
+history -a
