@@ -105,3 +105,171 @@ git add .
 pwd
 cd Recu_TP_AySO
 history -a
+cp ~/.bash_history ./Historial_comandos_PerezGambale.txt
+git add .
+git commit -m "ADD: Historial de comandos de PerezGambale"
+git config --global user.email "pedroperezgambale.utn@gmail.com"
+git config --global user.name "Pedro Perez Gambale"
+git commit -m "ADD: Historial de comandos de PerezGambale"
+mkdir -p /tmp/head-check/{Error/{cliente,servidor},ok}
+echo 'mkdir -p /tmp/head-check/{Error/{cliente,servidor},ok}' > Punto_D.sh
+chmod +x Punto_D.sh
+mkdir -p ~/Punto_E
+grep MemTotal /proc/meminfo > ~/Punto_E/Filtro_basico.txt
+pedro@DESKTOP-QD4O62A MINGW64 ~/Documents/UTN-FRA_SO_Vagrant/VagrantFiles/1_equipo (master)
+$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/jammy64' version '20241002.0.0' is up to date...
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+==> default: Machine 'default' has a post `vagrant up` message. This is a message
+==> default: from the creator of the Vagrantfile, and not from Vagrant itself:
+==> default:
+==> default:   ###########################################################################
+==> default:   #
+==> default:   # Para Ingresar a la VM puede usar cualquiera de las dos opciones:
+==> default:   #
+==> default:   ###########################################################################
+==> default:   # 1. (usar Vagrant)
+==> default:
+==> default:   vagrant ssh
+==> default:
+==> default:   # 2. Usar SSH indicando la key Privada
+==> default:   # Puede usar la private_key proporcionada por vagrant
+==> default:
+==> default:   ssh -i .vagrant/machines/default/virtualbox/private_key vagrant@192.168.56.3
+==> default:
+pedro@DESKTOP-QD4O62A MINGW64 ~/Documents/UTN-FRA_SO_Vagrant/VagrantFiles/1_equipo (master)
+$ vagrant ssh
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-173-generic x86_64)
+Expanded Security Maintenance for Applications is not enabled.
+68 updates can be applied immediately.
+56 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+Last login: Tue May 19 18:41:01 2026 from 10.0.2.2
+vagrant@VMPruebas:~$ history
+sshkey-gen
+ssh-keygen
+cat $HOME/.ssh/*.pub
+git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes
+rm -rf UTN-FRA_SO_Examenes
+git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes
+source ~/.bashrc
+sudo mkdir -p /datos/{textos/{libros,revistas},videos/{peliculas,series}}
+cd ~/Recu_TP_AySO
+sudo mkdir -p /datos/{textos/{libros,revistas},videos/{peliculas,series}}
+echo 'sudo mkdir -p /datos/{textos/{libros,revistas},videos/{peliculas,series}}' > Punto_A.sh
+chmod +x Punto_A.sh
+git add Punto_A.sh
+git commit -m "ADD: Punto_A.sh"
+sudo groupadd p1c1_2026_u1
+sudo useradd -m -s /bin/bash -g p1c1_2026_u1 p1c1_2026_u1
+echo "p1c1_2026_u1:clave123" | sudo chpasswd
+sudo passwd p1c1_2026_u1
+sudo mkdir -p /datos
+sudo chown p1c1_2026_u1:p1c1_2026_u1 /datos
+sudo -u p1c1_2026_u1 bash -c "whoami > /datos/validar1.txt"
+cat << FIN > Punto_B.sh
+sudo groupadd p1c1_2026_u1
+sudo useradd -m -s /bin/bash -g p1c1_2026_u1 p1c1_2026_u1
+echo "p1c1_2026_u1:clave123" | sudo chpasswd
+sudo mkdir -p /datos
+sudo chown p1c1_2026_u1:p1c1_2026_u1 /datos
+sudo -u p1c1_2026_u1 bash -c "whoami > /datos/validar1.txt"
+FIN
+
+git add Punto_B.sh
+git commit -m "ADD: Punto_B.sh"
+sudo groupadd p1c1_2026_Todos
+sudo groupdel p1c1_2026_Todos
+sudo groupadd p1c1_2026_Todos
+sudo usermod -aG p1c1_2026_Todos p1c1_2026_u1
+sudo chown -R :p1c1_2026_Todos /datos
+sudo chmod -R g+w /datos
+sudo chmod o+r,o-x /datos
+sudo useradd -m -s /bin/bash p1c1_2026_u2
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+sudo usermod -aG p1c1_2026_Todos p1c1_2026_u2
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+cat /datos/validar1.txt
+sudo cat /datos/validar1.txt
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+cat << FIN > Punto_C.sh
+sudo groupadd p1c1_2026_Todos
+sudo usermod -aG p1c1_2026_Todos p1c1_2026_u1
+sudo chown -R :p1c1_2026_Todos /datos
+sudo chmod -R g+w /datos
+sudo chmod o+r,o-x /datos
+sudo useradd -m -s /bin/bash p1c1_2026_u2
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+FIN
+
+git add Punto_C.sh
+git commit -m "ADD: Punto_C.sh
+"
+git add Punto_C.sh
+git commit -m "ADD: Punto_C.sh"
+mkdir -p /tmp/head-check/{Error/{cliente,servidor},ok}
+echo 'mkdir -p /tmp/head-check/{Error/{cliente,servidor},ok}' > Punto_D.sh
+chmod +x Punto_D.sh
+git add Punto_D.sh
+git commit -m "ADD: Punto_D.sh"
+sudo groupadd p1c1_2026_Todos
+sudo groupdel p1c1_2026_Todos
+sudo groupadd p1c1_2026_Todos
+sudo usermod -aG p1c1_2026_Todos p1c1_2026_u1
+sudo chown -R :p1c1_2026_Todos /datos
+sudo chmod -R g+w /datos
+sudo chmod o+r,o-x /datos
+sudo useradd -m -s /bin/bash p1c1_2026_u2
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+sudo chown -R :p1c1_2026_Todos /datos
+sudo chmod -R g+rwx /datos
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+sudo chown -R :p1c1_2026_Todos /datos
+sudo chmod g+rwx /datos
+sudo rm -f /datos/validar1.txt
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+sudo bash -c "sudo -u p1c1_2026_u2 id >> /datos/validar1.txt"
+sudo cat /datos/validar1.txt
+cat << FIN > Punto_C.sh
+sudo groupadd p1c1_2026_Todos
+sudo usermod -aG p1c1_2026_Todos p1c1_2026_u1
+sudo chown -R :p1c1_2026_Todos /datos
+sudo chmod -R g+w /datos
+sudo chmod o+r,o-x /datos
+sudo useradd -m -s /bin/bash p1c1_2026_u2
+sudo -u p1c1_2026_u2 bash -c "id >> /datos/validar1.txt"
+FIN
+
+git add Punto_C.sh
+git commit -m "ADD: Punto_C.sh"
+mkdir -p ~/Punto_E
+grep MemTotal /proc/meminfo > ~/Punto_E/Filtro_basico.txt
+grep "model name" /proc/cpuinfo | head -n1 >> ~/Punto_E/Filtro_basico.txt
+cat << FIN > Punto_E.sh
+mkdir -p ~/Punto_E
+grep MemTotal /proc/meminfo > ~/Punto_E/Filtro_basico.txt
+grep "model name" /proc/cpuinfo | head -n1 >> ~/Punto_E/Filtro_basico.txt
+FIN
+
+mkdir -p ~/Punto_F
+echo "Mi ip publica es: $(curl -s ifconfig.me)" > ~/Punto_F/Filtro_Avanzado.txt
+echo "CPU Modelo: $(grep 'model name' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}' | awk '{print $4}') Frecuencia: $(grep 'model name' /proc/cpuinfo | head -n1 | awk -F '@' '{print $2}' | xargs)" >> ~/Punto_F/Filtro_Avanzado.txtecho "CPU Modelo: $(grep 'model name' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}' | awk '{print $4}') Frecuencia: $(grep 'model name' /proc/cpuinfo | head -n1 | awk -F '@' '{print $2}' | xargs)" >> ~/Punto_F/Filtro_Avanzado.txt
+cat << FIN > Punto_F.sh
+mkdir -p ~/Punto_F
+IP_PUB=$(curl -s ifconfig.me)
+echo "Mi ip publica es: $IP_PUB" > ~/Punto_F/Filtro_Avanzado.txt
+MODELO=$(grep 'model name' /proc/cpuinfo | head -n1 | awk -F ':' '{print $2}' | awk '{print $4}')
+FRECUENCIA=$(grep 'model name' /proc/cpuinfo | head -n1 | awk -F '@' '{print $2}' | xargs)
+echo "CPU Modelo: $MODELO Frecuencia: $FRECUENCIA" >> ~/Punto_F/Filtro_Avanzado.txt
+FIN
+
+git add Punto_E.sh
+git commit -m "ADD: Punto_E.sh"
+git add Punto_F.sh
+git commit -m "ADD: Punto_F.sh"
+history -a
